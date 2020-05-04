@@ -1,7 +1,7 @@
-%%  create a homogeneous transformation using the function SE2
+%  create a homogeneous transformation using the function SE2
 
- T1 = SE2(1, 2, 30*pi/180);
- disp(T1)
+T1 = SE2(1, 2, 30*pi/180);
+disp(T1)
  
  % Coordinate frames drawn using the Toolbox function trplot2
  axis([0 5 0 5])
@@ -27,8 +27,9 @@
  
  p_1 = inv(T1) ;
  
- disp(p_1)
- disp(p_1 * [point; 1] );
+ disp(p_1; point)
+
+ 
  
  
  
